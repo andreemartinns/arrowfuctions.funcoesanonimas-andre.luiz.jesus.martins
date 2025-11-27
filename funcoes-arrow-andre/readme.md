@@ -1,19 +1,29 @@
-# Funções Anônimas e Arrow Functions no JavaScript
+📌 Funções Anônimas e Arrow Functions
 
-Este projeto apresenta os conceitos de **funções anônimas** e **arrow functions**, explicando a diferença entre elas, suas vantagens e casos de uso reais.
+Este projeto mostra a diferença entre funções anônimas e arrow functions no JavaScript, com exemplos simples e práticos.
 
----
+🔹 Funções Anônimas
 
-## 📌 1. O que são funções anônimas?
-São funções **sem nome**, criadas para serem usadas no momento da execução.
+Não possuem nome.
 
-São muito comuns em:
-- callbacks
-- timers
-- funções que recebem funções como parâmetro
+Usadas como callbacks.
 
-### ✔️ Exemplo:
-```js
 setTimeout(function() {
-  console.log("Olá! Esta é uma função anônima.");
+  console.log("Função anônima executada");
 }, 1000);
+
+🔹 Arrow Functions
+
+Sintaxe curta.
+
+Mais legível.
+
+Não altera o this.
+
+const somar = (a, b) => a + b;
+console.log(somar(5, 3));
+
+🔹 Exemplo com filter
+const numeros = [5, 10, 15, 20];
+const maiores = numeros.filter(n => n > 10);
+console.log(maiores);
